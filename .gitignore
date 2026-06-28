@@ -1,0 +1,32 @@
+# Gradle 构建产物
+.gradle/
+build/
+out/
+*.jar
+*.war
+*.ear
+
+# Gradle Wrapper 本身需要上传吗？建议保留 gradle/wrapper/ 下的 .jar 和 .properties 文件，但不要上传 gradle-wrapper.jar？通常我们会忽略它，但为了确保别人能直接构建，可以保留。我选择保留 wrapper 的 jar（因为太小），但也可以忽略，一般项目都会上传。
+# 我们保留 gradle/wrapper/gradle-wrapper.jar（允许），但忽略其他无用的。
+
+# IDE 配置文件（IntelliJ IDEA）
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+*.tmp
+
+# 本地配置文件（如果插件有）
+config.yml
+*.conf

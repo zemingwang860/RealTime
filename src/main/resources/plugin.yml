@@ -1,0 +1,17 @@
+name: RealTime
+version: 1.0.0
+main: top.zewang.realtime.RealTime
+api-version: 1.20f
+author: YourName
+description: 将游戏时间与现实时间同步，禁用床跳过夜晚，并播报诗意时段
+
+commands:
+  realtime:
+    description: 查看当前时间同步状态
+    usage: /realtime
+    permission: realtime.use
+
+permissions:
+  realtime.use:
+    description: 允许使用 /realtime 命令
+    default: op
